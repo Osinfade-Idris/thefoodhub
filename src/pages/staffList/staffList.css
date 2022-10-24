@@ -1,0 +1,32 @@
+.staffList {
+  width: calc(100% - 250px);
+}
+.staffListUser {
+  display: flex;
+  align-items: center;
+}
+.staffListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.userListEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #3bb077;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.userListDelete {
+  color: red;
+  cursor: pointer;
+}
+.page-tite {
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+}

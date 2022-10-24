@@ -1,0 +1,38 @@
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+} 
+
+.footer .box-container .box h3{
+    padding: 10px 0;
+    font-size: 20px;
+    color: #27ae60;
+}
+.footer .box-container .box a{
+    display: block;
+    padding:10px 0;
+    font-size: 18px;
+    color:#FFF;
+    cursor: pointer;
+}
+
+.footer .box-container .box a:hover{
+    color:#27ae60;
+    text-decoration: underline;
+    
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,.1);
+    font-size: 20px;
+    color:#192a56;
+    padding:20px;
+    margin-top: 10px;
+}
+
+.footer .credit span{
+    color:#27ae60;
+}

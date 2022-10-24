@@ -1,0 +1,75 @@
+.registration-div {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+.registration-div label {
+  text-align: left;
+  display: block;
+}
+.registration-div h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.registration-div input,
+.registration-div textarea,
+.registration-div select {
+  width: 100%;
+  padding: 0.8rem 0.6rem;
+  margin: 0.7rem 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 10px;
+}
+.checkbox {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.checkbox label {
+  white-space: nowrap;
+}
+.checkbox input {
+  display: flex;
+  justify-content: right;
+}
+.errors {
+  color: red;
+}
+.click {
+  color: darkblue;
+  display: inline-block;
+}
+.click:hover {
+  color: rgb(0, 0, 139, 0.5);
+}
+.submitButton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: #fff 1px solid;
+  background: #27ae60;
+  padding: 15px;
+  min-width: 150px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  -moz-transition: all 0.2s ease-in 0.2s;
+  transition: all 0.2s ease-in 0.2s;
+  -webkit-transition: all 0.2s ease-in 0.2s;
+  -ms-transition: all 0.2s ease-in 0.2s;
+  -o-transition: all 0.2s ease-in 0.2s;
+}
+.submitButton:hover {
+  background: #fff;
+  color: #27ae60;
+  border: #27ae60 1px solid;
+}

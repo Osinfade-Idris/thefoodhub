@@ -1,0 +1,111 @@
+.dashboardform {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  padding: 4px;
+}
+.dashboardformheader {
+  padding-left: 10%;
+  padding-right: 3%;
+  line-height: 60px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #333, darkblue);
+}
+
+.dashboardformheader .in .close {
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  float: right;
+  border-radius: 5px;
+  cursor: pointer;
+  -moz-transition: all 0.2s ease-in 02s;
+  transition: all 0.2s ease-in 0.2s;
+  -webkit-transition: all 0.2s ease-in 0.2s;
+  -ms-transition: all 0.2s ease-in 0.2s;
+  -o-transition: all 0.2s ease-in 0.2s;
+  background-color: red;
+  color: white;
+}
+.dashboardformheader .in .panelIcon {
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  float: left;
+  -moz-transition: all 0.2s ease-in 02s;
+  transition: all 0.2s ease-in 0.2s;
+  -webkit-transition: all 0.2s ease-in 0.2s;
+  -ms-transition: all 0.2s ease-in 0.2s;
+  -o-transition: all 0.2s ease-in 0.2s;
+  color: white;
+}
+
+.dashboardformheader .in .close:hover {
+  background: #fff;
+
+  color: red;
+}
+.dashboardformItem {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.dashboardformItem > label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+.dashboardformItem > input {
+  height: 20px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.dashboardformGender > input {
+  margin-top: 15px;
+}
+.dashboardformGender > label {
+  margin: 10px;
+  font-size: 18px;
+  color: #000;
+}
+.dashboardformSelect {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.dashboardformSelect option{
+  width: 100%;
+}
+.dashboardformButton {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: darkblue;
+  border: 1px solid darkblue;
+  color: #fff;
+  padding: 7px 10px;
+  font-weight: 600;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.dashboardformButton:hover {
+  background-color: white;
+  color: darkblue;
+}
