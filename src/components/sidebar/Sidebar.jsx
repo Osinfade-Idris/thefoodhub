@@ -47,9 +47,15 @@ export default function Sidebar() {
           </div>
 
           <div className="sidebarMenu">
-            <h3 className="sidebarTitle">Categories</h3>
+            <h3 className="sidebarTitle">Stock</h3>
             <ul className="sidebarList">
-            <Link to="/dashboard/products">
+            <Link to="/dashboard/categories">
+              <li className="sidebarListItem">
+                <BrunchDining className="sidebarIcon" />
+                Categories
+              </li>
+              </Link>
+              <Link to="/dashboard/products">
               <li className="sidebarListItem">
                 <BrunchDining className="sidebarIcon" />
                 Food & Drinks

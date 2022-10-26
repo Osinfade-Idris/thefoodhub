@@ -29,8 +29,12 @@ export default function Topbar() {
                 <SettingsIcon/>
               </div>
               <img src={Passport} alt="Avatar" className="topAvatar" />
-            </div>
-            
+
+                <div class="toggle">
+                  <a href="user-profile.php?user_id=<?php echo $loguser_id?>"><div class="sub-link"><i class="fa fa-eye"></i> My Profile </div></a>
+                  <a href="../connection/code.php?action=logout"><div class="sub-link"><i class="fa fa-sign-out-alt"></i> Log-Out </div></a>
+                  </div>	
+                </div>
         </div>
     </div>
   )

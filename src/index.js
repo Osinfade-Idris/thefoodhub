@@ -15,10 +15,7 @@ import MainLayout from './layout/MainLayout';
 import Home from "./pages/Home";
 import Login from "./pages/login/Login"
 import Apply from "./pages/apply/Apply";
-
-
-
-
+import CategoryList from './pages/categoryList/CategoryList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -34,6 +31,7 @@ root.render(
         <Route path="products" element={<ProductList/>} />
         <Route path="product/:productId" element={<Product/>} />
         <Route path="branches" element={<BranchList/>} />
+        <Route path="categories" element={<CategoryList/>} />
         <Route path="applications" element={<IncomingStaff/>} />
 
 

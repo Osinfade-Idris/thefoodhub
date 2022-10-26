@@ -52,3 +52,31 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+.toggle {
+    top: 50px;
+    padding: 10px;
+    width: 150px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    height: auto;
+    position: absolute;
+    right: 1%;
+    /* display: none; */
+}
+
+.toggle .sub-link {
+    border-bottom: #00a65a 1px solid;
+    height: 40px;
+    line-height: 40px;
+    color: #242424;
+    cursor: pointer;
+    font-size: 13px;
+    width: 130px;
+    text-align: left;
+    float: right;
+}
+.toggle .sub-link:hover {
+    border-bottom: #00a65a solid;
+    color: #00a65a;
+}
