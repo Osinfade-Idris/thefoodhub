@@ -80,3 +80,7 @@
     border-bottom: #00a65a solid;
     color: #00a65a;
 }
+
+.dis-none{
+    display: none;
+}

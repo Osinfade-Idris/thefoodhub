@@ -19,6 +19,8 @@ const Apply = () => {
         <label>First Name:</label>
         <input
           type="text"
+          name="firstName"
+          id="firstName"
           {...register("firstName", {
             required: "Please fill in your first name",
             minLength: {
@@ -28,86 +30,153 @@ const Apply = () => {
           })}
         />
         <p className="errors">{errors.firstName?.message}</p>
+       
         <label>Last Name:</label>
         <input
           type="text"
+          name="lastNmae"
+          id="lastName"
           {...register("lastName", {
             required: "Please fill in your Last name",
             minLength: {
               value: 4,
-              message: "The minimum first name length is 4",
+              message: "The minimum last name length is 4",
             },
           })}
         />
         <p className="errors">{errors.lastName?.message}</p>
-        <label for="gender">Gender</label>
-        <select
-          name="gender"
-          id="gender"
-          {...register("gender", { required: "This is required" })}
-        >
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
+        
         {/* {errors.body && <p style={{ color: 'red' }}>Please check your last name</p>} */}
         <label>Email:</label>
         <input
           type="text"
+          name="email"
+          id="email"
           {...register("email", {
             required: "Please fill in your Email",
             minLength: {
               value: 4,
-              message: "The minimum first name length is 4",
+              message: "Invalid Mail",
             },
           })}
         />
         <p className="errors">{errors.email?.message}</p>
 
-        <label for="training_track">Choose a training track:</label>
+        <label>Phone Number:</label>
+        <input
+          type="text"
+          name="phoneNo"
+          id="phoneNo"
+          {...register("phoneNo", {
+            required: "Please fill in your Phone Number",
+            minLength: {
+              value: 4,
+              message: "Invalid Phone Number",
+            },
+          })}
+        />
+        <p className="errors">{errors.phoneNo?.message}</p>
+
+        <label>Date Of Birth:</label>
+        <input
+          type="date"
+          name="dateofbirth"
+          id="dateofbirth"
+          {...register("dateofbirth", {
+            required: "Please fill in your Date of Birth",
+            minLength: {
+              value: 4,
+              message: "Invalid Date",
+            },
+          })}
+        />
+        <p className="errors">{errors.dateofbirth?.message}</p>
+
+        <label for="training_track">Gender:</label>
         <select
-          name="training_track"
-          id="training_track"
-          {...register("training_track")}
+          name="gender"
+          id="gender"
+          {...register("gender", {
+            required: "Please Pick Your Gender",
+            minLength: {
+              value: 4,
+              message: "Invalid Value",
+            },
+          })}
         >
-          <option value="softwareengineering">Software Engineering</option>
-          <option value="devops">Devops</option>
-          <option value="qualityassurance">Quality Assurance</option>
+          <option value=""></option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
         </select>
-        <label for="class_of_degree">Class of degree:</label>
+        <p className="errors">{errors.gender?.message}</p>
+
+        <label for="class_of_degree">Religion:</label>
         <select
-          name="class_of_degree"
-          id="class_of_degree"
-          {...register("class_of_degree")}
+          name="religion"
+          id="religion"
+          {...register("religion", {
+            required: "Please Pick Your Religion",
+            minLength: {
+              value: 4,
+              message: "Invalid Value",
+            },
+          })}
         >
-          <option value="first_class">First Class</option>
-          <option value="second_class_upper">Second Class Upper</option>
-          <option value="second_class_lower">Second Class Lower</option>
+          <option value=""></option>
+          <option value="Christainity">Christainity</option>
+          <option value="Islam">Islam</option>
           <option value="others">Others</option>
         </select>
-        <div className="checkbox">
-          <label for="nysc"> I have completed NYSC</label>
-          <input
-            type="checkbox"
-            id="nysc"
-            name="nysc"
-            value="nysc"
-            {...register("nysc")}
-          />
-        </div>
-        <div className="checkbox">
-          <label for="experience">
-            {" "}
-            I have 0-3years experience in my chosen field
-          </label>
-          <input
-            type="checkbox"
-            id="experience"
-            name="experience"
-            value="experience"
-            {...register("experience")}
-          />
-        </div>
-        {/* <Button value='Register' styleClass='blue-button' type="submit"></Button> */}
+        <p className="errors">{errors.religion?.message}</p>
+
+        <label>Nationality:</label>
+        <input
+          type="text"
+          name="nationality"
+          id="nationality"
+          {...register("nationality", {
+            required: "Please fill in your Nationality",
+            minLength: {
+              value: 4,
+              message: "Invalid Nationality",
+            },
+          })}
+        />
+        <p className="errors">{errors.nationality?.message}</p>
+
+        <label>Address:</label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          {...register("address", {
+            required: "Please fill in your Address",
+            minLength: {
+              value: 4,
+              message: "Invalid Address",
+            },
+          })}
+        />
+        <p className="errors">{errors.address?.message}</p>
+
+        <label for="training_track">Position Available:</label>
+        <select
+          name="positionAvailable"
+          id="positionAvailable"
+          {...register("positionAvailable", {
+            required: "Please Your Job Interest",
+            minLength: {
+              value: 4,
+              message: "Invalid Value",
+            },
+          })}
+        >
+          <option value=""></option>
+          <option value="Purchase Manager">Purchase Manager</option>
+          <option value="Chef">Chef</option>
+        </select>
+        <p className="errors">{errors.positionAvailable?.message}</p>
+
         <button className="submitButton">Submit</button>
         <div>
           Already have an account?{" "}

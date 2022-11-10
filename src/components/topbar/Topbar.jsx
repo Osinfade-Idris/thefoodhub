@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./topbar.css"
 import Passport from '../../assets/images/avatar.png';
 
@@ -7,6 +7,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import SettingsIcon from '@mui/icons-material/Settings';
 
 export default function Topbar() {
+  const [extra, setExtra] = useState(false);
   return (
     <div className="topbar">
         <div className="topbarWrapper">
@@ -19,7 +20,7 @@ export default function Topbar() {
                 <NotificationsNoneIcon/>
                 <span className="topIconBadge">2</span>
               </div>
-
+ 
               <div className="topbarIconContainer">
                 <LanguageIcon/>
                 <span className="topIconBadge">2</span>
@@ -28,11 +29,11 @@ export default function Topbar() {
               <div className="topbarIconContainer">
                 <SettingsIcon/>
               </div>
-              <img src={Passport} alt="Avatar" className="topAvatar" />
+              <img onClick={()=> setExtra(!extra)} src={Passport} alt="Avatar" className="topAvatar" />
 
-                <div class="toggle">
-                  <a href="user-profile.php?user_id=<?php echo $loguser_id?>"><div class="sub-link"><i class="fa fa-eye"></i> My Profile </div></a>
-                  <a href="../connection/code.php?action=logout"><div class="sub-link"><i class="fa fa-sign-out-alt"></i> Log-Out </div></a>
+                <div className={`toggle ${!extra && 'dis-none'}`}>
+                  <a><div class="sub-link"> My Profile </div></a>
+                  <a><div class="sub-link">Log-Out </div></a>
                   </div>	
                 </div>
         </div>

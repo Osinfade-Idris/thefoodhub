@@ -14,8 +14,7 @@ const Login = () => {
         console.log(data)};
   
     return (
-        <div className="registration-div">
-          {/* <img src={InterswitchAcademyLogo} alt="" /> */}
+        <div className="registration-div">          
             <form  onSubmit={onSubmit}>
             
                 {/* {errors.body && <p style={{ color: 'red' }}>Please check your last name</p>} */}
