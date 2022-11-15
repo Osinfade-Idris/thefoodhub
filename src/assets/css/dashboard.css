@@ -93,6 +93,7 @@
 }
 
 .dashboardformButton {
+  margin-left: 20px;
   width: 200px;
   height: 40px;
   border: none;

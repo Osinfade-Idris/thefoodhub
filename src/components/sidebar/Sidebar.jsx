@@ -61,10 +61,6 @@ export default function Sidebar() {
                 Food & Drinks
               </li>
               </Link>
-              <li className="sidebarListItem">
-                <Construction className="sidebarIcon" />
-                Equipments
-              </li>
 
               <Link to="">
                 <li className="sidebarListItem">
@@ -76,26 +72,26 @@ export default function Sidebar() {
           </div>
 
           <div className="sidebarMenu">
-            <h3 className="sidebarTitle">Transaction Reports</h3>
+            <h3 className="sidebarTitle">Orders</h3>
             <ul className="sidebarList">
+              <Link to="/dashboard/order">
+              <li className="sidebarListItem">
+                <RequestQuote className="sidebarIcon" />
+                Make An Order
+              </li>
+              </Link>
               <li className="sidebarListItem">
                 <Sell className="sidebarIcon" />
-                Sales Report
+                Orders Report
               </li>
-              <li className="sidebarListItem">
-                <ShoppingBag className="sidebarIcon" />
-                Expenditure Report
-              </li>
+
             </ul>
           </div>
 
           <div className="sidebarMenu">
             <h3 className="sidebarTitle">Settings</h3>
             <ul className="sidebarList">
-            <li className="sidebarListItem">
-                <RequestQuote className="sidebarIcon" />
-                Send A Quote
-              </li>
+              
               <li className="sidebarListItem">
                 <ChangeCircle className="sidebarIcon" />
                 Change Password

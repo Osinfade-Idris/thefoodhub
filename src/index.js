@@ -16,6 +16,7 @@ import Home from "./pages/Home";
 import Login from "./pages/login/Login"
 import Apply from "./pages/apply/Apply";
 import CategoryList from './pages/categoryList/CategoryList';
+import Order from './pages/order/OrderList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,8 +34,7 @@ root.render(
         <Route path="branches" element={<BranchList/>} />
         <Route path="categories" element={<CategoryList/>} />
         <Route path="applications" element={<IncomingStaff/>} />
-
-
+        <Route path="order" element={<Order/>} />
       </Route>
 
      
@@ -42,7 +42,6 @@ root.render(
         <Route index element={<Home/>} />
         <Route path="login" element={<Login/>} />
         <Route path="apply" element={<Apply/>} />
-
       </Route>
 
 
