@@ -50,36 +50,42 @@ export default function OrderList() {
                 <img src={Food} alt=""/>
                 <div class="dish-name"><h3>tasty food</h3></div>
                 <div class="dish-price">$15.99</div>
+                <input class="qty-box" type="number"  defaultValue={1}/>
                 <button className="btn">Add to Cart</button>
             </div>
             <div class="box">
                 <img src={Drinks} alt=""/>
                 <div class="dish-name"><h3>tasty food</h3></div>
                 <div class="dish-price">$15.99</div>
+                <input class="qty-box" type="number" defaultValue={1}/>
                 <button className="btn">Add to Cart</button>
             </div>
             <div class="box">
                 <img src={Cocktails} alt=""/>
                 <div class="dish-name"><h3>tasty food</h3></div>
                 <div class="dish-price">$15.99</div>
+                <input class="qty-box" type="number" defaultValue={1}/>
                 <button className="btn">Add to Cart</button>
             </div>
             <div class="box">
                 <img src={Cakes} alt=""/>
                 <div class="dish-name"><h3>tasty food</h3></div>
                 <div class="dish-price">$15.99</div>
+                <input class="qty-box" type="number" defaultValue={1}/>
                 <button className="btn">Add to Cart</button>
             </div>
             <div class="box">
                 <img src={Pastries} alt=""/>
                 <div class="dish-name"><h3>tasty food</h3></div>
                 <div class="dish-price">$15.99</div>
+                <input class="qty-box" type="number"defaultValue={1}/>
                 <button className="btn">Add to Cart</button>
             </div>
             <div class="box">
                 <img src={Pizza} alt=""/>
                 <div class="dish-name"><h3>tasty food</h3></div>
                 <div class="dish-price">$15.99</div>
+                <input class="qty-box" type="number" defaultValue={1}/>
                 <button className="btn">Add to Cart</button>
             </div>
         </div> 
@@ -89,6 +95,29 @@ export default function OrderList() {
       <div className="column2">
         <div className="columnheader">
           <h2 className="Title">Cart Summary</h2>
+        </div>
+
+        <div className="item">
+          <div className="name">Item: Rice</div>
+          <div className="qty">Quantity: 2</div>
+          <div className="subtotal"><span>Subtotal:</span> $35</div>
+        </div>
+
+        <div className="item">
+          <div className="name">Item: Chicken M/S</div>
+          <div className="qty">Quantity: 2</div>
+          <div className="subtotal"><span>Subtotal:</span> $35</div>
+        </div>
+
+        <div className="item">
+          <div className="name"><span>Item:</span> Eggs</div>
+          <div className="qty">Quantity: 2</div>
+          <div className="subtotal"><span>Subtotal:</span> $35</div>
+        </div>
+
+
+        <div className="totalprice">
+          <h2 className="total">Total: $789</h2>
         </div>
         
       </div>

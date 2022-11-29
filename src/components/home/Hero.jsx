@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Background2 from "../../assets/images/background4.jpg";
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -15,7 +15,10 @@ const Hero = () => {
                     The Food Hub is committed to promoting your state of good health. 
                     Count on us for hygienically processed healthy Foods & Drinks, Smoothies & Bites.
                   </div>
-                <button class="btn" title="Order Now"> <i class="fa fa-shopping-basket"></i>  ORDER NOW!</button>
+
+                <Link to="/login">
+                <button class="btn" title="Order Now"> <i class="fa fa-shopping-basket"></i>  LOGIN</button>
+                </Link>
               </div>
             </div>
           </div>
